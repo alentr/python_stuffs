@@ -1,0 +1,18 @@
+<project>
+    <component name="c1">
+        <configuration name="conf1">
+        </configuration>
+        <configuration name="conf2">
+        </configuration>
+        <configuration name="conf3">
+            <envs>
+                 <env name="API_GATEWAY_BASE_URL" value="http://localhost:3000" />
+                 <env name="API_GATEWAY_CLIENT_URL" value="http://localhost:3000" />
+            </envs>
+        </configuration>
+    </component>
+    <component name="c2">
+    </component>
+    <component name="c3">
+    </component>
+</project>
