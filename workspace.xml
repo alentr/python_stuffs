@@ -1,0 +1,13 @@
+<project version="4">
+  <component name="RunManager" selected="Kotlin.CallsRouterApplicationKt">
+    <configuration name="CallsRouterApplicationKt" type="JetRunConfigurationType" nameIsGenerated="true">
+      <envs>
+        <env name="ENV_NAME_1" value="ENV_VALUE_1" />
+        <env name="ENV_NAME_2" value="ENV_VALUE_2" />
+        <env name="ENV_NAME_3" value="ENV_VALUE_3" />
+        <env name="ENV_NAME_4" value="ENV_VALUE_4" />
+      </envs>
+      <option name="VM_PARAMETERS" value="-javaagent:build/libs/newrelic.jar" />
+    </configuration>
+  </component>
+</project>
