@@ -25,10 +25,10 @@ print(f'{datetime.now()}: instantiating xlsx')
 workbook = openpyxl.Workbook()
 workbook.remove(workbook['Sheet'])
 workbook.create_sheet('Promoções')
-sheet_produtos = workbook['Promoções']
+sheet_products = workbook['Promoções']
 
-sheet_produtos['A1'].value = 'Produto'
-sheet_produtos['B1'].value = 'Preço'
+sheet_products['A1'].value = 'Produto'
+sheet_products['B1'].value = 'Preço'
 
 print(f'{datetime.now()}: finding page size')
 # pages = driver.find_element(By.XPATH, '//li[@class="numbers-pagination__number--last numbers-pagination__number--disabled numbers-pagination__number"]').text
@@ -47,7 +47,7 @@ for i in range(1, int(pages) + 1):
     for prod_on_sale in products_on_sale:
         desc = prod_on_sale.find_element(By.XPATH, ".//span[@class='produc-card__name__link']").text
         price = prod_on_sale.find_element(By.XPATH, ".//span[@class='price__container']//span[@class='value']").text
-        sheet_produtos.append([desc, price])
+        sheet_products.append([desc, price])
 
 print(f'{datetime.now()}: all products were appended to the xlsx file')
 
