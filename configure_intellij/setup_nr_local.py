@@ -7,7 +7,7 @@ envs = {
     "NEW_RELIC_LICENSE_KEY": "123"
 }
 
-xml_path = '../workspace.xml'
+xml_path = 'workspace.xml'
 app_name = 'CallsRouterApplicationKt'
 
 
